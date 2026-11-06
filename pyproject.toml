@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lcdcalc"
+version = "0.1.0"
+description = "Pixel clock, interface bandwidth, frame buffer and pixel pitch calculators for TFT and LCD displays"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [{ name = "SuccessLCD", email = "sales@successlcd.com" }]
+keywords = ["lcd", "tft", "display", "pixel clock", "lvds", "mipi dsi", "frame buffer", "embedded"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.urls]
+Homepage = "https://successlcd.com/"
+"Online calculators" = "https://successlcd.com/tft-display-pixel-clock-bandwidth-calculator/"
+
+[project.scripts]
+lcdcalc = "lcdcalc.__main__:main"
+
+[tool.setuptools]
+packages = ["lcdcalc"]
